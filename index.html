@@ -4,14 +4,15 @@
         <title>Apurupa Mathi</title>
     </head>
     <body>
+        <a href="bonus.html">BONUS</a>
         <h1>
             Hello this is Apurupa's Page
         </h1>
-        <h6>
-            Nandi Hills-India </h6>
+        <h2>
+            Nandi Hills-India </h2>
         <p>Nandi hills is famous for <b>hill of happiness</b>which is located in the bangalore.Bangalore has emerged as the<b>most livable city in the world</b>.</p>
         <hr>
-        <h3>Directions</h3>
+        <h1>Directions</h1>
         <ol>
             <li> Book a cab from Maryville to Kansas airport
                 <ol>
@@ -22,19 +23,81 @@
                     <li>Complete your check-out process in Karnataka</li>
                 </ol>
             </li>
-
         </ol>
         <ul>
             <li>clothes</li>
-            <Ul>
-                <li> Sweaters</li>
-                <li> shoes</li>
-
-            </U1>
+            <li> Sweaters</li>
+            <li> shoes</li>
             <li>Money</li>
             <li>snacks</li>
         </ul>
-        <a>href=""C:\Users\S545531\Documents\webapps-repos\webapps-f21-assignment-3-Apurupa-mathi\aboutme.html"</a>
-        
+        <a href="aboutme.html"> click here to view the content</a>
+
+        <hr />
+        <h1> Table creation with food and drinks</h1>
+        <p>My experienced foods and drinks</p>
+        <table border="1">
+            <tr>
+                <th>Food/Drink</th>
+                <th>Location</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Almond choclate milk</td>
+                <td>Starbucks</td>
+                <td>$.5.45</td>
+            </tr>
+            <tr>
+                <td>French Fries</td>
+                <td>Apple bee</td>
+                <td>$4.25</td>
+            </tr>
+            <tr>
+                <td>pasta</td>
+                <td>Apple bee</td>
+                <td>$5.25</td>
+            </tr>
+            <tr>
+                <td>Burger</td>
+                <td>KFC</td>
+                <td>$6</td>
+            </tr>
+        </table>
+        <hr/>
+        <h1>Algorithm on Graphs</h1>
+        <blackquote>
+            In math, a graph can be defined as a pictorial representation or a diagram that represents  
+            or values in an organized manner. The points on the graph often represent the relationship 
+            between two or more things.
+        </blackquote>
+        <br/>
+        <a href="https://www.splashlearn.com/math-vocabulary/geometry/graph">click here for Definition</a>
+        <pre>
+            vector<vector<int>> adj;  // adjacency list representation
+                int n; // number of nodes
+                int s; // source vertex
+                
+                queue<int> q;
+                vector<bool> used(n);
+                vector<int> d(n), p(n);
+                
+                q.push(s);
+                used[s] = true;
+                p[s] = -1;
+                while (!q.empty()) {
+                    int v = q.front();
+                    q.pop();
+                    for (int u : adj[v]) {
+                        if (!used[u]) {
+                            used[u] = true;
+                            q.push(u);
+                            d[u] = d[v] + 1;
+                            p[u] = v;
+                        }
+                    }
+                }
+        </pre>
+        <a href ="https://cp-algorithms.com/graph/breadth-first-search.html">Click here for source code</a>
+
     </body>
     </html>   
